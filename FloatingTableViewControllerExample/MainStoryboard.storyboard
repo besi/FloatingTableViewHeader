@@ -6,17 +6,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Floating Table View Controller Example-->
         <scene sceneID="VMi-Wo-FqW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gD0-xF-Bxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="p2z-Xt-K0O" customClass="ViewController" sceneMemberID="viewController">
+                <tableViewController id="p2z-Xt-K0O" customClass="FloatingTableViewControllerExample" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ve1-ot-TQQ">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="88" id="uCl-Yc-QFh" customClass="FloatingHeaderCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="88" id="uCl-Yc-QFh" customClass="BBFloatingHeaderCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -67,17 +67,6 @@
     <resources>
         <image name="icon.png" width="88" height="88"/>
     </resources>
-    <classes>
-        <class className="FloatingHeaderCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FloatingHeaderCell.h"/>
-        </class>
-        <class className="FloatingHeaderViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FloatingHeaderViewController.h"/>
-        </class>
-        <class className="ViewController" superclassName="FloatingHeaderViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

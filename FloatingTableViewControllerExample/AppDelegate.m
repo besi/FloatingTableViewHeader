@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  GroupedTableViewLikeSpotlight
+//  FloatingTableViewControllerExample
 //
 //  Created by Beat Besmer on 13.07.12.
 //

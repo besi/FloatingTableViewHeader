@@ -1,15 +1,13 @@
 //
 //  FloatingHeaderCell.m
-//  GroupedTableViewLikeSpotlight
+//  FloatingTableViewControllerExample
 //
 //  Created by Beat Besmer on 14.07.12.
 //
 
-#import "FloatingHeaderCell.h"
+#import "BBFloatingHeaderCell.h"
 
-
-
-@implementation FloatingHeaderCell
+@implementation BBFloatingHeaderCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

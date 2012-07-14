@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD1282DB15B09CCF00F87105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1282DA15B09CCF00F87105 /* UIKit.framework */; };
+		CD1282DD15B09CCF00F87105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1282DC15B09CCF00F87105 /* Foundation.framework */; };
+		CD1282DF15B09CCF00F87105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1282DE15B09CCF00F87105 /* CoreGraphics.framework */; };
+		CD12830E15B1766400F87105 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD12830C15B1766400F87105 /* InfoPlist.strings */; };
+		CD12831115B1767E00F87105 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD12831015B1767E00F87105 /* MainStoryboard.storyboard */; };
+		CD934FFB15B1786900B33788 /* FloatingTableViewControllerExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD12831215B1768B00F87105 /* FloatingTableViewControllerExample-Info.plist */; };
+		CD934FFF15B1793E00B33788 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD12830915B1765200F87105 /* AppDelegate.m */; };
+		CD93500015B1793E00B33788 /* FloatingTableViewControllerExample.m in Sources */ = {isa = PBXBuildFile; fileRef = CD12830B15B1765200F87105 /* FloatingTableViewControllerExample.m */; };
+		CD93500115B1793E00B33788 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD12831415B1768F00F87105 /* main.m */; };
+		CD93500615B179B400B33788 /* BBFloatingHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93500315B179B400B33788 /* BBFloatingHeaderCell.m */; };
+		CD93500715B179B400B33788 /* BBFloatingHeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD93500515B179B400B33788 /* BBFloatingHeaderTableViewController.m */; };
+		CD93500815B179C100B33788 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD12830715B1765200F87105 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD1282D615B09CCF00F87105 /* FloatingTableViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingTableViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1282DA15B09CCF00F87105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD1282DC15B09CCF00F87105 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD1282DE15B09CCF00F87105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD12830715B1765200F87105 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = FloatingTableViewControllerExample/icon.png; sourceTree = SOURCE_ROOT; };
+		CD12830815B1765200F87105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FloatingTableViewControllerExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CD12830915B1765200F87105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FloatingTableViewControllerExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CD12830A15B1765200F87105 /* FloatingTableViewControllerExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingTableViewControllerExample.h; path = FloatingTableViewControllerExample/FloatingTableViewControllerExample.h; sourceTree = SOURCE_ROOT; };
+		CD12830B15B1765200F87105 /* FloatingTableViewControllerExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FloatingTableViewControllerExample.m; path = FloatingTableViewControllerExample/FloatingTableViewControllerExample.m; sourceTree = SOURCE_ROOT; };
+		CD12830D15B1766400F87105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FloatingTableViewControllerExample/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		CD12831015B1767E00F87105 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = FloatingTableViewControllerExample/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		CD12831215B1768B00F87105 /* FloatingTableViewControllerExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FloatingTableViewControllerExample-Info.plist"; path = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CD12831415B1768F00F87105 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FloatingTableViewControllerExample/main.m; sourceTree = SOURCE_ROOT; };
+		CD12831615B1769800F87105 /* FloatingTableViewControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FloatingTableViewControllerExample-Prefix.pch"; path = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		CD93500215B179B400B33788 /* BBFloatingHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFloatingHeaderCell.h; sourceTree = SOURCE_ROOT; };
+		CD93500315B179B400B33788 /* BBFloatingHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFloatingHeaderCell.m; sourceTree = SOURCE_ROOT; };
+		CD93500415B179B400B33788 /* BBFloatingHeaderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFloatingHeaderTableViewController.h; sourceTree = SOURCE_ROOT; };
+		CD93500515B179B400B33788 /* BBFloatingHeaderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFloatingHeaderTableViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1282D315B09CCF00F87105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1282DB15B09CCF00F87105 /* UIKit.framework in Frameworks */,
+				CD1282DD15B09CCF00F87105 /* Foundation.framework in Frameworks */,
+				CD1282DF15B09CCF00F87105 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD1282CB15B09CCE00F87105 = {
+			isa = PBXGroup;
+			children = (
+				CD1282E015B09CCF00F87105 /* FloatingTableViewControllerExample */,
+				CD1282D915B09CCF00F87105 /* Frameworks */,
+				CD1282D715B09CCF00F87105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1282D715B09CCF00F87105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1282D615B09CCF00F87105 /* FloatingTableViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1282D915B09CCF00F87105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1282DA15B09CCF00F87105 /* UIKit.framework */,
+				CD1282DC15B09CCF00F87105 /* Foundation.framework */,
+				CD1282DE15B09CCF00F87105 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1282E015B09CCF00F87105 /* FloatingTableViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				CD1282FF15B16A3C00F87105 /* FloatingHeader */,
+				CD12830715B1765200F87105 /* icon.png */,
+				CD12830815B1765200F87105 /* AppDelegate.h */,
+				CD12830915B1765200F87105 /* AppDelegate.m */,
+				CD12830A15B1765200F87105 /* FloatingTableViewControllerExample.h */,
+				CD12831015B1767E00F87105 /* MainStoryboard.storyboard */,
+				CD12830B15B1765200F87105 /* FloatingTableViewControllerExample.m */,
+				CD1282E115B09CCF00F87105 /* Supporting Files */,
+			);
+			name = FloatingTableViewControllerExample;
+			path = GroupedTableViewLikeSpotlight;
+			sourceTree = "<group>";
+		};
+		CD1282E115B09CCF00F87105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD12830C15B1766400F87105 /* InfoPlist.strings */,
+				CD12831215B1768B00F87105 /* FloatingTableViewControllerExample-Info.plist */,
+				CD12831615B1769800F87105 /* FloatingTableViewControllerExample-Prefix.pch */,
+				CD12831415B1768F00F87105 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD1282FF15B16A3C00F87105 /* FloatingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CD93500215B179B400B33788 /* BBFloatingHeaderCell.h */,
+				CD93500315B179B400B33788 /* BBFloatingHeaderCell.m */,
+				CD93500415B179B400B33788 /* BBFloatingHeaderTableViewController.h */,
+				CD93500515B179B400B33788 /* BBFloatingHeaderTableViewController.m */,
+			);
+			name = FloatingHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD1282D515B09CCF00F87105 /* FloatingTableViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1282F415B09CCF00F87105 /* Build configuration list for PBXNativeTarget "FloatingTableViewControllerExample" */;
+			buildPhases = (
+				CD1282D215B09CCF00F87105 /* Sources */,
+				CD1282D315B09CCF00F87105 /* Frameworks */,
+				CD1282D415B09CCF00F87105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatingTableViewControllerExample;
+			productName = GroupedTableViewLikeSpotlight;
+			productReference = CD1282D615B09CCF00F87105 /* FloatingTableViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1282CD15B09CCE00F87105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Monostream GmbH";
+			};
+			buildConfigurationList = CD1282D015B09CCE00F87105 /* Build configuration list for PBXProject "FloatingTableViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD1282CB15B09CCE00F87105;
+			productRefGroup = CD1282D715B09CCF00F87105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1282D515B09CCF00F87105 /* FloatingTableViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD1282D415B09CCF00F87105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD934FFB15B1786900B33788 /* FloatingTableViewControllerExample-Info.plist in Resources */,
+				CD12830E15B1766400F87105 /* InfoPlist.strings in Resources */,
+				CD12831115B1767E00F87105 /* MainStoryboard.storyboard in Resources */,
+				CD93500815B179C100B33788 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1282D215B09CCF00F87105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD934FFF15B1793E00B33788 /* AppDelegate.m in Sources */,
+				CD93500015B1793E00B33788 /* FloatingTableViewControllerExample.m in Sources */,
+				CD93500115B1793E00B33788 /* main.m in Sources */,
+				CD93500615B179B400B33788 /* BBFloatingHeaderCell.m in Sources */,
+				CD93500715B179B400B33788 /* BBFloatingHeaderTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD12830C15B1766400F87105 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD12830D15B1766400F87105 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD1282F215B09CCF00F87105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD1282F315B09CCF00F87105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD1282F515B09CCF00F87105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD1282F615B09CCF00F87105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "FloatingTableViewControllerExample/FloatingTableViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1282D015B09CCE00F87105 /* Build configuration list for PBXProject "FloatingTableViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1282F215B09CCF00F87105 /* Debug */,
+				CD1282F315B09CCF00F87105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1282F415B09CCF00F87105 /* Build configuration list for PBXNativeTarget "FloatingTableViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1282F515B09CCF00F87105 /* Debug */,
+				CD1282F615B09CCF00F87105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1282CD15B09CCE00F87105 /* Project object */;
+}

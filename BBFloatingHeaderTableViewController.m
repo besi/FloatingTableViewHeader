@@ -1,17 +1,19 @@
 //
 //  FloatingHeaderViewController.m
-//  GroupedTableViewLikeSpotlight
+//  FloatingTableViewControllerExample
 //
 //  Created by Beat Besmer on 14.07.12.
 //
 
-#import "FloatingHeaderViewController.h"
+#import "BBFloatingHeaderTableViewController.h"
 
-@interface FloatingHeaderViewController ()
+@interface BBFloatingHeaderTableViewController ()
+
+@property (readonly) NSArray *headerCells;
 
 @end
 
-@implementation FloatingHeaderViewController
+@implementation BBFloatingHeaderTableViewController
 
 #pragma mark - misc
 - (NSArray *)headerCells{
@@ -19,7 +21,7 @@
     NSMutableArray *headerCells = [NSMutableArray array];
     
     for (UIView *cell in self.view.subviews) {
-        if ([cell isMemberOfClass:[FloatingHeaderCell class]]){
+        if ([cell isMemberOfClass:[BBFloatingHeaderCell class]]){
             [headerCells addObject:cell];
         }
     }
@@ -45,7 +47,7 @@
         return;
     }
     
-    FloatingHeaderCell *firstHeader = [headers objectAtIndex:0];
+    BBFloatingHeaderCell *firstHeader = [headers objectAtIndex:0];
     CGRect firstRect = firstHeader.frame;
     CGRect secondRect = ((UIView *)[headers objectAtIndex:1]).frame;
     UIView *headerContent = firstHeader.contentView;

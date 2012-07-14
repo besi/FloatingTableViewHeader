@@ -1,15 +1,15 @@
 //
 //  ViewController.m
-//  GroupedTableViewLikeSpotlight
+//  FloatingTableViewControllerExample
 //
 
-#import "ViewController.h"
+#import "FloatingTableViewControllerExample.h"
 
-@interface ViewController ()
+@interface FloatingTableViewControllerExample ()
 
 @end
 
-@implementation ViewController
+@implementation FloatingTableViewControllerExample
 
 
 #pragma mark - UITableViewDataSource
