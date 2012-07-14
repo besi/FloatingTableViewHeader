@@ -18,11 +18,6 @@
  */
 @interface FloatingHeaderViewController : UITableViewController
 
-/**
- * The height when the next header cell will push the above header cell up
- */
-@property NSUInteger headerHeight;
-
 @property (readonly) NSArray *headerCells;
 
 @end

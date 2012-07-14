@@ -14,12 +14,6 @@
 
 #pragma mark - UITableViewDataSource
 
--(void)viewDidLoad{
-    [super viewDidLoad];
-    self.headerHeight = 88;
-}
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return (section+1) + 1;
 }

@@ -13,8 +13,6 @@
 
 @implementation FloatingHeaderViewController
 
-@synthesize headerHeight = _headerHeight;
-
 #pragma mark - misc
 - (NSArray *)headerCells{
     
@@ -41,8 +39,6 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    NSAssert(self.headerHeight > 0, @"Header height must be set to a value > 0");
-    
     NSArray *headers = self.headerCells;
     
     if(headers.count < 2){
@@ -52,13 +48,15 @@
     FloatingHeaderCell *firstHeader = [headers objectAtIndex:0];
     CGRect firstRect = firstHeader.frame;
     CGRect secondRect = ((UIView *)[headers objectAtIndex:1]).frame;
+    UIView *headerContent = firstHeader.contentView;
     
+    int headerHeight = ((UIView *)[[headerContent subviews] objectAtIndex:0]).frame.size.height;
+        
     // Tail of first - head of second
-    int overlap = (firstRect.origin.y + self.headerHeight) - secondRect.origin.y;
+    int overlap = (firstRect.origin.y + headerHeight) - secondRect.origin.y;
     
     if (overlap >= 0){
         // Move the first one up
-        UIView *headerContent = firstHeader.contentView;
         
         CGRect newRect = headerContent.frame;
         newRect.origin.y = -overlap;
@@ -69,9 +67,6 @@
 
 
 #pragma mark - UITableViewDelegate
-
-
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 1;
 }
