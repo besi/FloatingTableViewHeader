@@ -15,6 +15,9 @@
 		CD1282EB15B09CCF00F87105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1282EA15B09CCF00F87105 /* AppDelegate.m */; };
 		CD1282EE15B09CCF00F87105 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1282EC15B09CCF00F87105 /* MainStoryboard.storyboard */; };
 		CD1282F115B09CCF00F87105 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1282F015B09CCF00F87105 /* ViewController.m */; };
+		CD1282F815B09E6800F87105 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1282F715B09E6800F87105 /* icon.png */; };
+		CD1282FB15B167B200F87105 /* FloatingHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1282FA15B167B200F87105 /* FloatingHeaderViewController.m */; };
+		CD1282FE15B16A3500F87105 /* FloatingHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1282FD15B16A3500F87105 /* FloatingHeaderCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,20 @@
 		CD1282DA15B09CCF00F87105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CD1282DC15B09CCF00F87105 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD1282DE15B09CCF00F87105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CD1282E215B09CCF00F87105 /* GroupedTableViewLikeSpotlight-Info.plist */ = {isa = PBXFileReference; path = "GroupedTableViewLikeSpotlight-Info.plist"; sourceTree = "<group>"; };
+		CD1282E215B09CCF00F87105 /* GroupedTableViewLikeSpotlight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroupedTableViewLikeSpotlight-Info.plist"; sourceTree = "<group>"; };
 		CD1282E415B09CCF00F87105 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD1282E615B09CCF00F87105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CD1282E815B09CCF00F87105 /* GroupedTableViewLikeSpotlight-Prefix.pch */ = {isa = PBXFileReference; path = "GroupedTableViewLikeSpotlight-Prefix.pch"; sourceTree = "<group>"; };
-		CD1282E915B09CCF00F87105 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD1282E815B09CCF00F87105 /* GroupedTableViewLikeSpotlight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupedTableViewLikeSpotlight-Prefix.pch"; sourceTree = "<group>"; };
+		CD1282E915B09CCF00F87105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD1282EA15B09CCF00F87105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD1282ED15B09CCF00F87105 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CD1282EF15B09CCF00F87105 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		CD1282EF15B09CCF00F87105 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD1282F015B09CCF00F87105 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD1282F715B09E6800F87105 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CD1282F915B167B200F87105 /* FloatingHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingHeaderViewController.h; sourceTree = "<group>"; };
+		CD1282FA15B167B200F87105 /* FloatingHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingHeaderViewController.m; sourceTree = "<group>"; };
+		CD1282FC15B16A3500F87105 /* FloatingHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FloatingHeaderCell.h; path = ../FloatingHeaderCell.h; sourceTree = "<group>"; };
+		CD1282FD15B16A3500F87105 /* FloatingHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FloatingHeaderCell.m; path = ../FloatingHeaderCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		CD1282E015B09CCF00F87105 /* GroupedTableViewLikeSpotlight */ = {
 			isa = PBXGroup;
 			children = (
+				CD1282FF15B16A3C00F87105 /* FloatingHeader */,
+				CD1282F715B09E6800F87105 /* icon.png */,
 				CD1282E915B09CCF00F87105 /* AppDelegate.h */,
 				CD1282EA15B09CCF00F87105 /* AppDelegate.m */,
 				CD1282EC15B09CCF00F87105 /* MainStoryboard.storyboard */,
@@ -96,6 +106,17 @@
 				CD1282E815B09CCF00F87105 /* GroupedTableViewLikeSpotlight-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD1282FF15B16A3C00F87105 /* FloatingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CD1282F915B167B200F87105 /* FloatingHeaderViewController.h */,
+				CD1282FA15B167B200F87105 /* FloatingHeaderViewController.m */,
+				CD1282FC15B16A3500F87105 /* FloatingHeaderCell.h */,
+				CD1282FD15B16A3500F87105 /* FloatingHeaderCell.m */,
+			);
+			name = FloatingHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +172,7 @@
 			files = (
 				CD1282E515B09CCF00F87105 /* InfoPlist.strings in Resources */,
 				CD1282EE15B09CCF00F87105 /* MainStoryboard.storyboard in Resources */,
+				CD1282F815B09E6800F87105 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +186,8 @@
 				CD1282E715B09CCF00F87105 /* main.m in Sources */,
 				CD1282EB15B09CCF00F87105 /* AppDelegate.m in Sources */,
 				CD1282F115B09CCF00F87105 /* ViewController.m in Sources */,
+				CD1282FB15B167B200F87105 /* FloatingHeaderViewController.m in Sources */,
+				CD1282FE15B16A3500F87105 /* FloatingHeaderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

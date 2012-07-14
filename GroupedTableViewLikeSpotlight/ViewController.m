@@ -2,9 +2,6 @@
 //  ViewController.m
 //  GroupedTableViewLikeSpotlight
 //
-//  Created by Beat Besmer on 13.07.12.
-//  Copyright (c) 2012 Monostream GmbH. All rights reserved.
-//
 
 #import "ViewController.h"
 
@@ -14,21 +11,49 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+
+#pragma mark - UITableViewDataSource
+
+-(void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.headerHeight = 88;
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return (section+1) + 1;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 6;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"headerCell"];
+    
+    if(section %2 == 0){
+        [cell viewWithTag:22].backgroundColor = [UIColor blueColor];
+    }else {
+        [cell viewWithTag:22].backgroundColor = [UIColor blackColor];
+    }
+    
+    return cell;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contentCell"];
+    cell.textLabel.text = [NSString stringWithFormat:@"Section %i Row %i", indexPath.section, indexPath.row];
+    
+    // Alternate color 
+    if(indexPath.section %2 == 0){
+        cell.textLabel.textColor = [UIColor blueColor];
+    } else{
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
+    
+    return cell;
 }
 
 @end
