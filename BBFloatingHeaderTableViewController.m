@@ -21,7 +21,7 @@
     NSMutableArray *headerCells = [NSMutableArray array];
     
     for (UIView *cell in self.view.subviews) {
-        if ([cell isMemberOfClass:[BBFloatingHeaderCell class]]){
+        if ([cell isKindOfClass:[BBFloatingHeaderCell class]]){
             [headerCells addObject:cell];
         }
     }
